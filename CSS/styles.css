@@ -1,0 +1,137 @@
+/* Estilo Geral */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Links de Navegação como Botões */
+nav a,
+.main-buttons a {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 25px;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav a:hover,
+.main-buttons a:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+nav a:active,
+.main-buttons a:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Seção Principal */
+main section {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    padding: 50px;
+    text-align: center;
+    color: white;
+}
+
+/* Título Principal */
+main section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #f9f9f9;
+}
+
+/* Botões "Ver Meus Projetos" e "Saiba Mais" */
+.main-buttons {
+    margin-top: 30px;
+    color: #f9f9f9;
+}
+
+.main-buttons a {
+    padding: 15px 30px;
+    font-size: 18px;
+    color: #f9f9f9;
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    /* Ajustes para tablets e telas menores */
+   
+    .contact {
+      padding: 15px; /* Reduz o padding interno para se ajustar melhor em telas menores */
+    }
+ 
+    .contact-form {
+      flex-direction: column; /* Garante que os itens ainda se organizem em uma coluna */
+    }
+ 
+    .form-group {
+      margin-bottom: 10px; /* Reduz a margem inferior dos grupos de campos */
+    }
+ 
+    input, textarea {
+      font-size: 14px; /* Reduz o tamanho da fonte para melhorar a legibilidade em telas menores */
+    }
+ 
+    .submit-button {
+      padding: 10px 15px; /* Ajusta o padding para um tamanho mais adequado em telas menores */
+    }
+ 
+    .contact-info {
+      margin-top: 15px; /* Reduz a margem superior para economizar espaço */
+    }
+ 
+    .social-links a {
+      margin-right: 8px; /* Ajusta a margem direita dos links sociais */
+    }
+  }
+ 
+  @media (max-width: 480px) {
+    /* Ajustes para smartphones e telas muito pequenas */
+   
+    .contact {
+      padding: 10px; /* Reduz ainda mais o padding interno */
+    }
+ 
+    .form-group {
+      margin-bottom: 8px; /* Reduz a margem inferior dos grupos de campos */
+    }
+ 
+    input, textarea {
+      font-size: 12px; /* Reduz o tamanho da fonte para se ajustar melhor em telas pequenas */
+    }
+ 
+    .submit-button {
+      padding: 8px 12px; /* Ajusta o padding para se ajustar melhor em telas pequenas */
+    }
+ 
+    .contact-info {
+      margin-top: 10px; /* Reduz a margem superior */
+    }
+ 
+    .social-links a {
+      margin-right: 5px; /* Ajusta a margem direita dos links sociais */
+    }
+  }
+
